@@ -26,7 +26,7 @@ def self.parse(args)
 		opts.banner = "Usage: split_csv.rb [options]"
 
 		opts.on("-rROWS", "--num-rows", "Number of rows in output file") do |o|
-			options.num_rows = o
+			options.num_rows = o.to_i
 		end
 
 		opts.on("-iINPUT", "--input INPUT", "Input File") do |o|
