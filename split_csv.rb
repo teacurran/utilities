@@ -65,8 +65,12 @@ end
 
 $options = parse(ARGV)
 
-puts "input:#{$options.input} num rows:#{$options.num_rows}"
+if $options.input == nil || $options.output == nil
+	puts "You must specify both an input and output"
+	exit
+end
 
+puts "input:#{$options.input} num rows:#{$options.num_rows}"
 
 $output_content = []
 csv = CSV::parse(File.open($options.input, "r:ISO-8859-1") { |f| f.read })

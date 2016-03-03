@@ -34,3 +34,28 @@ build/
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+
+# IDEs
+.idea
+*.iml
+nbproject
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+atlassian-ide-plugin.xml
+*.swp
+*.out
+target
+target/*
+.setting/
+.settings/
+.project/
+*/.project
+.project
+.classpath
+projectFilesBackup/*
+*/.pydevproject
+.metadata/
